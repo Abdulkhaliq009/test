@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form — Markus Döner Deluxe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💎 Markus Döner Deluxe</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="doner.html">🥙 Döner</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="order-form">
+    <h2>Complete Your Order</h2>
+    <p>Please fill in your details below to order your luxury meal.</p>
+
+    <form id="orderForm" onsubmit="return submitOrder(event)">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name">
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required placeholder="Delivery address">
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required placeholder="+49 176 ...">
+
+      <label for="item">Select Your Order</label>
+      <select id="item" name="item" required>
+        <option value="">-- Choose an item --</option>
+        <option value="Imperial Döner">Imperial Döner (€79.00)</option>
+        <option value="Royal Pizza">Royal Pizza (€59.00)</option>
+        <option value="Crystal Drink">Crystal Drink (€25.00)</option>
+      </select>
+
+      <label for="notes">Additional Notes</label>
+      <textarea id="notes" name="notes" rows="3" placeholder="Any special requests..."></textarea>
+
+      <button type="submit" class="order-btn">Submit Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Markus Döner Deluxe — The Taste of Prestige</p>
+  </footer>
+
+  <script src="script.js"></script>
+ <body class="order-page">
+
+</html>

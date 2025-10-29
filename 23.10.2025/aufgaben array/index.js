@@ -52,3 +52,5 @@ Available: ${user.available}`
   );
   console.log('-----------------');
 });
+
+console
