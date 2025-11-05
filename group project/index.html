@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World-Quiz</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Debug Buttons -->
+  <div class="debug-controls">
+    <button id="start-screen-button">Start-Screen</button>
+    <button id="quiz-screen-button">Quiz-Screen</button>
+    <button id="result-screen-button">Result-Screen</button>
+    <button id="load-Question-button">load-Question</button>
+  </div>
+
+  <header class="site-header">
+    <h1>World-Quiz</h1>
+    <p class="subtitle">Teste dein Wissen – schnell, schön und responsiv.</p>
+  </header>
+
+  <main>
+    <!-- Start Screen -->
+    <section id="start-screen" class="screen">
+      <h2>Bereit?</h2>
+      <p>Wähle ein Thema und starte das Quiz. Pro Frage gibt es einen Timer – bleib wachsam!</p>
+
+      <div class="controls">
+        <label for="topic-select">Thema:</label>
+        <select id="topic-select" aria-label="Thema auswählen">
+          <option value="general">Allgemeinwissen</option>
+          <option value="film">Filme</option>
+          <option value="geo">Geografie</option>
+        </select>
+
+        <label for="q-count">Anzahl Fragen:</label>
+        <select id="q-count">
+          <option value="5">5</option>
+          <option value="10" selected>10</option>
+          <option value="15">15</option>
+        </select>
+
+        <label for="timer-toggle" class="inline">
+          <input type="checkbox" id="timer-toggle" checked>
+          Timer pro Frage (15 s)
+        </label>
+
+        <button id="start-btn" class="primary">Start</button>
+      </div>
+
+      <p class="note">Highscore: <span id="highscore">-</span></p>
+    </section>
+
+    <!-- Quiz Screen -->
+    <section id="quiz-screen" class="screen hidden" aria-live="polite">
+      <div class="quiz-header">
+        <div id="progress">Frage 1 von 10</div>
+        <div id="timer">15</div>
+      </div>
+
+      <button id="restart-btn" class="secondary small">Restart</button>
+
+      <article class="question-card">
+        <h3 id="question-text">Fragetext</h3>
+        <div id="answer-buttons" class="btn-grid" role="list"></div>
+      </article>
+
+<!-- sdsdsd -->
+<fieldset>
+  <legend>Select a maintenance drone:</legend>
+
+  <div>
+    <input type="radio" id="huey" name="drone" value="huey" checked />
+    <label for="huey">Huey</label>
+  </div>
+
+  <div>
+    <input type="radio" id="dewey" name="drone" value="dewey" />
+    <label for="dewey">Dewey</label>
+  </div>
+
+  <div>
+    <input type="radio" id="louie" name="drone" value="louie" />
+    <label for="louie">Louie</label>
+  </div>
+</fieldset>
+<!-- sdsdsd -->
+      <div class="quiz-controls">
+        <button id="next-btn" class="primary hidden">Nächste Frage</button>
+        <button id="quit-btn" class="secondary">Abbrechen</button>
+      </div>
+    </section>
+
+    <!-- Result Screen -->
+    <section id="result-screen" class="screen hidden">
+      <h2>Ergebnis</h2>
+      <p id="result-text">Du hast X von Y Fragen richtig beantwortet.</p>
+      <p id="result-message">Nice message.</p>
+
+      <div class="result-actions">
+        <button id="result-btn" class="primary">Neustart</button>
+        <button id="back-btn" class="secondary">Zurück zum Start</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Gruppenprojekt · SPA Trivia · Timer und Highscore</small>
+  </footer>
+
+</body>
+</html>

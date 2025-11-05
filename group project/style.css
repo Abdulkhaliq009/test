@@ -1,0 +1,22 @@
+ 
+:root {
+    --bacground: #181D27;
+    --sections: #254d32;
+    --insections: #3a7d44;    
+    --text-color: #69b578;
+    --buttons: #D0DB97 ; 
+}
+
+
+body {
+    background-color: var(--bacground);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
