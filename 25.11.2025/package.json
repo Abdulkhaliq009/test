@@ -1,0 +1,14 @@
+{
+  "name": "25.11.2025",
+  "version": "1.0.0",
+  "description": "- cgroups\r -- Quotas für prozesse auf CPU- und Ram -Ebene \r -Namespaces\r     -PID\r     -Netzwerk\r     -Dateisytem\r     -- ...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
